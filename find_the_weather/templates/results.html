@@ -1,6 +1,6 @@
-{% extends 'base.html' %}#对所传入模板名称使用的加载方法和 get_template() 相同。
+{% extends 'base.html' %}
 
-{% block body %} #任何每个页面都可能修改的文本区域的页面
+{% block body %}
 <h1 align="center">天气查询结果如下</h1>
 
 <table align="center" border="1px" cellspacing="0px" bordercolor="white">
@@ -11,4 +11,4 @@
   <td>天气现象</td>  <td>{{the_condition}}</td>
 </table>
 
-{% endblock %}#在当前模版页中定义了{% block content %}{% endblock %}，那么它会覆盖掉父模版的content块的内容。
+{% endblock %}
