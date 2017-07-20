@@ -14,7 +14,7 @@
 <form method='POST' action='/pick_a_city' align="center">
 <table align="center" border="1px" cellspacing="0px" bordercolor="white">
 <th colspan="2">请输入城市：</th>
-<tr><td>日期: </td><td><input type="text" name="city" list="city" placeholder="请输入城市名，如：广州" />
+<tr><td>城市: </td><td><input type="text" name="city" list="city" placeholder="请输入城市名，如：广州" />
 <datalist id="city">
 		{% for city in the_list_city %}
 		<option value='{{city}}'>{{city}}</option>
