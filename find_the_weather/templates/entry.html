@@ -1,33 +1,28 @@
 {% extends 'base.html' %}
 {% block body %} 
-
-<h2>欢迎使用天气查询工具</h2>
-
-<form method='POST' action='/pick_a_date'>
-<table align="center">
+<br><br><br><br><br><br>
+<h1 align="center">欢迎使用天气查询工具</h1>
+<br>
+<form method='POST' action='/pick_a_date' align="center">
+<br><br>
+<table align="center" border="1px" cellspacing="0px" bordercolor="white" >
+<br><br>
 <th colspan="2">请选取日期：</th>
 <tr><td>日期: </td><td><input type="date" name="user_date" /></td></tr>
 </table>
 
- <form method='POST' action='/pick_a_city'>
-<table align="center">
+<form method='POST' action='/pick_a_city' align="center">
+<table align="center" border="1px" cellspacing="0px" bordercolor="white">
 <th colspan="2">请输入城市：</th>
+<tr><td>日期: </td><td><input type="text" name="city" list="city" placeholder="请输入城市名，如：广州" />
 <datalist id="city">
 		{% for city in the_list_city %}
 		<option value='{{city}}'>{{city}}</option>
 		{% endfor %}
   </datalist>
 
-<td>
-<select name="city">
- <tr><td>城市: </td><td><input type="city" name="user_city" /></td></tr>
 </table>
-  {% for item in the_user_city %}
-  
-    <option value="{{item}}">{{item}}</option>
-
-  {% endfor %}
-
+<br><br>
   <p>准备就绪后, 单击此按钮：</p>
 <p><input value='寻找！' type='SUBMIT'></p>
 </form>
