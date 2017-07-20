@@ -1,11 +1,10 @@
-{% extends 'base.html' %}#对所传入模板名称使用的加载方法和 get_template() 相同。
-
-{% block body %} #任何每个页面都可能修改的文本区域的页面
+{% extends 'base.html' %}
+{% block body %} 
 
 <h2>欢迎使用天气查询工具</h2>
 
 <form method='POST' action='/pick_a_date'>
-<table align="center">#单元格文字居中
+<table align="center">
 <th colspan="2">请选取日期：</th>
 <tr><td>日期: </td><td><input type="date" name="user_date" /></td></tr>
 </table>
