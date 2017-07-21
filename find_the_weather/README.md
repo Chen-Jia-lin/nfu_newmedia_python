@@ -16,7 +16,7 @@ Find_the_weather是可以实现用户通过输入所要选取的日期以及相�
 •[city_name.txt](city_name.txt)
 其中包含503个城市name及其code
 ### API
-[心知天气](https://api.seniverse.com/v3/weather/now.json?key=lkdq5kssgdg01qrn&location=%s&language=zh-Hans&unit=c%city_name)
+[心知天气](https://api.seniverse.com/v3/weather/now.json?key=lkdq5kssgdg01qrn&location=guangzhou&language=zh-Hans&unit=c%city_name)
 变量为city_name
 
 # Web App动作描述
